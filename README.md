@@ -2,7 +2,7 @@
 
 智能视频剪辑工具 - 自动剪辑高燃片段并配卡点BGM
 
-[![Version](https://img.shields.io/badge/version-2.1-blue.svg)](https://github.com/huajielong/skills-hub/tree/main/video-highlight-skill)
+[![Version](https://img.shields.io/badge/version-2.1-blue.svg)](https://github.com/huajielong/video-highlight/tree/main/video-highlight-skill)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Tunee](https://img.shields.io/badge/Tunee_AI-integrated-purple.svg)](https://www.tunee.ai)
 
@@ -72,16 +72,16 @@ python main.py your_video.mp4 --analyze-only
 
 ```bash
 # 方式1: Git Clone（推荐）
-git clone https://github.com/huajielong/skills-hub.git ~/.claude/skills/video-highlight-skill --depth 1 --single-branch --branch main
+git clone https://github.com/huajielong/video-highlight.git ~/.claude/skills/video-highlight-skill --depth 1 --single-branch --branch main
 
 # 方式2: Curl 下载
-curl -L https://github.com/huajielong/skills-hub/archive/refs/heads/main.tar.gz | tar -xz -C ~/.claude/skills/ --strip-components=1 skills-hub-main/video-highlight-skill
+curl -L https://github.com/huajielong/video-highlight/archive/refs/heads/main.tar.gz | tar -xz -C ~/.claude/skills/ --strip-components=1 video-highlight-main/video-highlight-skill
 
 # 方式3: Wget 下载
-wget -O- https://github.com/huajielong/skills-hub/archive/refs/heads/main.tar.gz | tar -xz -C ~/.claude/skills/ --strip-components=1 skills-hub-main/video-highlight-skill
+wget -O- https://github.com/huajielong/video-highlight/archive/refs/heads/main.tar.gz | tar -xz -C ~/.claude/skills/ --strip-components=1 video-highlight-main/video-highlight-skill
 
 # Windows PowerShell
-git clone https://github.com/huajielong/skills-hub.git $env:USERPROFILE\.claude\skills\video-highlight-skill --depth 1 --single-branch --branch main
+git clone https://github.com/huajielong/video-highlight.git $env:USERPROFILE\.claude\skills\video-highlight-skill --depth 1 --single-branch --branch main
 ```
 
 ### 手动安装
@@ -224,7 +224,7 @@ A: 支持FFmpeg支持的所有格式：MP4, MOV, AVI, MKV, FLV等
 ## 技能包信息
 
 - **版本**: v2.1
-- **仓库**: https://github.com/huajielong/skills-hub/tree/main/video-highlight-skill
+- **仓库**: https://github.com/huajielong/video-highlight/tree/main/video-highlight-skill
 
 ---
 
