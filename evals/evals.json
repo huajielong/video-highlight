@@ -1,0 +1,116 @@
+{
+  "skill_name": "video-highlight",
+  "version": "2.1",
+  "evals": [
+    {
+      "id": 1,
+      "name": "Tunee AI高燃剪辑",
+      "prompt": "把D:/videos/my_footage.mp4剪辑成30秒的高燃片段，配专业高燃音乐",
+      "expected_output": "使用Tunee AI生成epic风格音乐，分析场景，提取片段，混音输出",
+      "files": [],
+      "assertions": [
+        {
+          "name": "使用Tunee AI生成BGM",
+          "check": "BGM generation uses Tunee API"
+        },
+        {
+          "name": "生成最终视频文件",
+          "check": "final output file exists and ends with .mp4"
+        },
+        {
+          "name": "视频时长约30秒",
+          "check": "video duration is between 29 and 31 seconds"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "游戏精彩时刻(本地BGM)",
+      "prompt": "帮我提取视频中动作最精彩的部分，做成30秒的短视频，保留解说",
+      "expected_output": "场景分析，提取活跃片段，本地生成BGM，使用vlog预设混音",
+      "files": [],
+      "assertions": [
+        {
+          "name": "场景分析完成",
+          "check": "analysis output contains scene information"
+        },
+        {
+          "name": "推荐活跃片段",
+          "check": "recommendation has scene_count >= 3"
+        },
+        {
+          "name": "生成最终视频",
+          "check": "final video file exists"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "不同音乐风格对比",
+      "prompt": "分别用epic、chill、cinematic三种风格生成BGM，看看哪个适合这段视频",
+      "expected_output": "生成三种不同风格的BGM文件",
+      "files": [],
+      "assertions": [
+        {
+          "name": "生成epic风格",
+          "check": "epic style BGM file exists"
+        },
+        {
+          "name": "生成chill风格",
+          "check": "chill style BGM file exists"
+        },
+        {
+          "name": "生成cinematic风格",
+          "check": "cinematic style BGM file exists"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "高燃动作视频(action预设)",
+      "prompt": "剪个卡点视频，30秒，需要配高燃音乐，不要保留对白",
+      "expected_output": "使用Tunee AI生成epic音乐，action预设混音（BGM 80%）",
+      "files": [],
+      "assertions": [
+        {
+          "name": "使用action预设",
+          "check": "mix preset is set to action"
+        },
+        {
+          "name": "生成最终视频",
+          "check": "final video file exists"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Vlog片段(保留对白)",
+      "prompt": "剪个30秒的vlog片段，要保留说话声，配点轻音乐",
+      "expected_output": "使用chill风格音乐，vlog预设混音（保留对白，BGM 30%）",
+      "files": [],
+      "assertions": [
+        {
+          "name": "使用vlog预设",
+          "check": "mix preset is set to vlog"
+        },
+        {
+          "name": "保留对白",
+          "check": "mix settings favor original audio"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "检查Tunee积分",
+      "prompt": "检查一下我的Tunee账户还剩多少积分",
+      "expected_output": "显示剩余积分数量",
+      "files": [],
+      "assertions": [
+        {
+          "name": "返回积分数量",
+          "check": "output contains credits information"
+        }
+      ]
+    }
+  ]
+}
