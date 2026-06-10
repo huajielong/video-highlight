@@ -23,6 +23,8 @@
   <a href="#-faq">❓ FAQ</a>
 </p>
 
+> [中文说明](README.zh.md)
+
 ---
 
 ## 🤔 How Long Does It Take to Clip a Highlight Reel?
@@ -239,5 +241,3 @@ MIT © [huajielong](https://github.com/huajielong)
   <i>v2.1 — Professional Music Generation, One-Click Smart Editing!</i><br>
   ⭐ If this helps you, please give it a Star!
 </p>
-
-> [中文说明](README.zh.md)
